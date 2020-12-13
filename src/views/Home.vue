@@ -2,10 +2,7 @@
   <v-container >
     <div style="height: 60px;"></div>
     <v-row>
-    <v-col
-      
-      sm="12"
-    >
+    <v-col sm="12">
       <v-hover
         v-slot="{ hover }"
         open-delay="200"
@@ -68,14 +65,14 @@
                           color="primary"
                           @click="modal = false"
                         >
-                          Cancel
+                          cerrar
                         </v-btn>
                         <v-btn
                           text
                           color="primary"
                           @click="$refs.dialog.save(date)"
                         >
-                          OK
+                          listo
                         </v-btn>
                       </v-date-picker>
                     </v-dialog>
@@ -109,14 +106,14 @@
                           color="primary"
                           @click="modal = false"
                         >
-                          Cancel
+                          Cerrar
                         </v-btn>
                         <v-btn
                           text
                           color="primary"
                           @click="$refs.dialog.save(date)"
                         >
-                          OK
+                          Listo
                         </v-btn>
                       </v-date-picker>
                     </v-dialog>
@@ -126,7 +123,7 @@
               <v-col cols="12" lg="2" >
                 
                 <div class="text-center" >
-                  <router-link to="/about" class="v-btn v-btn--rounded theme--dark elevation-6 v-size--x-large primary">Buscar
+                  <router-link to="/buscador" class="v-btn v-btn--rounded theme--dark elevation-6 v-size--x-large primary">Buscar
                     <v-icon
                       right
                       dark
