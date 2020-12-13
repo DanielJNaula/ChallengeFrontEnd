@@ -3,9 +3,12 @@
     <div style="height: 150px;"></div>
     <v-row>
     <v-col sm="12">
+      
+    
       <v-hover
         v-slot="{ hover }"
         open-delay="200"
+        
       >
         <v-card
           :elevation="hover ? 16 : 2"
@@ -13,9 +16,10 @@
           class="mx-auto"
           max-width="100%"
           align-center
+          color="blue lighten-5"
         >
           <v-card-text class="font-weight-medium mt-12 text-center subtitle-1">
-            Challenge Front-end Buscador
+            <strong> Challenge Front-end Buscador </strong> 
           </v-card-text>
           <v-card-text>
             <v-row >
@@ -23,6 +27,7 @@
                 <v-row >
                   <v-col cols="12" sm="6" md="3" >
                     <v-text-field
+                      
                       outlined
                       label="Ciudad origen"
                       prepend-icon="edit_location"
