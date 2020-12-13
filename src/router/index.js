@@ -15,6 +15,10 @@ const routes = [
     name: 'buscador',
     
     component: () => import('../views/Buscador.vue')
+  },
+  {
+    path: '*',
+    component: () => import('../components/plantilla/404.vue')
   }
 ]
 
