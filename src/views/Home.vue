@@ -1,6 +1,6 @@
 <template>
   <v-container >
-    <div style="height: 60px;"></div>
+    <div style="height: 150px;"></div>
     <v-row>
     <v-col sm="12">
       <v-hover
@@ -142,6 +142,7 @@
 
     
   </v-row>
+  <div style="height: 300px;"></div>
   </v-container>
 
 </template>
