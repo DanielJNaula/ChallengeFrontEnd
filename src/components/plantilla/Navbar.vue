@@ -13,7 +13,7 @@
       
       <v-toolbar-items class="d-none d-md-flex" > 
         
-        <router-link  v-for="(item, index) in items" :key="index"  class="v-btn v-btn--flat v-btn--icon  theme--dark v-size--default item-navbar"  :to="{name:item.ruta}">{{item.title}}</router-link>
+        <router-link  v-for="(item, index) in items" :key="index"  class="v-btn v-btn--flat v-btn--icon  theme--dark v-size--default item-navbar"  :to="{name:item.name_ruta}">{{item.title}}</router-link>
       </v-toolbar-items>
     </v-app-bar>
 
@@ -36,7 +36,7 @@
       <v-divider></v-divider>
 
       <v-list dense>
-        <router-link v-for="(item, index) in items" :key="index" class="v-list-item v-list-item--link theme--light" :to="{name:item.ruta}">
+        <router-link v-for="(item, index) in items" :key="index" class="v-list-item v-list-item--link theme--light" :to="{name:item.name_ruta}">
           <v-list-item-icon>
             <v-icon color="orange darken-2">{{ item.icon }}</v-icon>
             
@@ -63,8 +63,8 @@ export default {
       return {
         drawer: null,
         items: [
-          { title: 'Inicio', icon: 'open_in_new', ruta:'home'},
-          { title: 'Buscador', icon: 'battery_charging_full', ruta:'about' },
+          { title: 'Inicio', icon: 'open_in_new', name_ruta:'home'},
+          { title: 'Buscador', icon: 'battery_charging_full', name_ruta:'buscador' },
         ],
       }
     },
